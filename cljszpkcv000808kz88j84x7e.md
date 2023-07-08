@@ -1,30 +1,31 @@
 ---
-title: "Programação com pato de borracha? saiba o que é"
+title: "Rubber duck debugging? what?"
 datePublished: Fri Jul 07 2023 19:49:02 GMT+0000 (Coordinated Universal Time)
 cuid: cljszpkcv000808kz88j84x7e
-slug: programacao-com-pato-de-borracha-saiba-o-que-e
+slug: rubber-duck-debugging-what
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1688827917995/684154a2-6de5-4c63-a8a6-9f0a15dc0d09.jpeg
 tags: programming-blogs, books, tips
 
 ---
 
 ![um incrivel pato de borracha](https://images.prismic.io/pehcst/3c91444d-066b-47b5-88b8-efe93d48484f_duck.jpeg?auto=compress,format align="center")
 
-Se você é programador, já se pegou falando sozinho para entender o que seu código ta fazendo, ou identificar onde está um determinado error, esse *debug* é um método bastante conhecido e os programadores acabam debugando com um “pato de borracha”. Parece loucura, mas é um método de engenharia de software, o ***debugging* com pato de borracha** faz referência a uma história do livro *O Programador Pragmático* (recomendo fortemente a leitura) em que um programador carrega um pato de borracha e debuga seu código, obrigando-se a explicá-lo, linha por linha, para o pato.
+If you're a programmer, have you ever found yourself talking to yourself to understand what your code is doing or to identify where a certain error is occurring? This debugging method is quite well-known, and programmers often debug with a "***rubber duck.***" It may sound crazy, but it's a software engineering method. Debugging with a rubber duck refers to a story from the book "*The Pragmatic Programmer*" (which I highly recommend reading) where a programmer carries a rubber duck and debugs their code by explaining it, line by line, to the duck.
 
-Eu tenho e sei que muitos programadores já tiveram a experiência de explicar um problema de programação para outra pessoa, possivelmente até mesmo para alguém que não saiba nada sobre esse universo e, magicamente, encontra a solução durante a explicação do problema.
+I have done it, and I know that many programmers have had the experience of explaining a programming problem to someone else, possibly even to someone who knows nothing about this universe, and magically finding the solution during the explanation of the problem.
 
-Mas como isso é possível? ao descrever o que o código deveria fazer e observar o que ele efetivamente faz, qualquer diferença entre esses processos fica mais claro e perceptível. De modo geral, você explicar ou ensinar sobre um determinado assunto te força a entender o caso a partir de diferentes perspectivas auxiliando no entendimento do problema.
+But how is this possible? By describing what the code should do and observing what it does, any differences between these processes become clearer and more noticeable. In general, explaining or teaching about a particular subject forces you to understand the case from different perspectives, aiding in the understanding of the problem.
 
-Mas tem que ser um pato de borracha? Não, claro que não, pode ser qualquer coisa, o pato é usado como uma figura representativa no livro, eu particularmente explico grande parte dos meus problemas de código para um amigo de trabalho ou meu Patolino que fica em minha mesa.
+But does it have to be a rubber duck? No, of course not. It can be anything. The duck is used as a representative figure in the book. Personally, I explain most of my code problems to a coworker or my little toy duck, Patolino, who sits at my desk.
 
-A dica é: você pode usar um pato de borracha, ou qualquer outro objeto mais discreto que possa conversar com ele (sim programação é isso ai galera, tem que ser doido)
+The tip is: you can use a rubber duck or any other discreet object you can talk to (yes, programming is like that, folks, you have to be a bit crazy).
 
-# A explicação
+# The Explanation
 
-Funciona sim, e existe todo um estudo psicológico por trás de como tudo isso funciona, o resumo é que quando falamos em voz alta nosso cérebro consegue processar melhor os detalhes e, com isso, a atenção a detalhes ou erros fica mais aguçada, logo achamos os problemas mais rapidamente.
+It does work, and there is a whole psychological study behind how all of this works. The summary is that when we speak out loud, our brain can process the details better, and as a result, our attention to details or errors becomes sharper, allowing us to find problems more quickly.
 
 ![pato salva vidas](https://images.prismic.io/pehcst/03af10aa-d8c4-46c3-8edb-c85a2332ee42_duck2.png?auto=compress,format align="center")
 
-A figura de um pato de borracha que assumimos que não entende nada de programação ou qualquer determinado assunto, temos que explicar com mais detalhes o que estamos pensando na hora de escrever aquele bloco de código. Com isso somos forçados, enquanto está explicando o problema, a prestar mais atenção a aquilo que só estava fazendo sozinho.
+The figure of a rubber duck, which we assume knows nothing about programming or any particular subject, requires us to explain in more detail what we are thinking when writing that block of code. By doing this, we are forced, while explaining the problem, to pay more attention to what we were previously doing alone.
 
-Bem, isso é tudo! Obrigado pela leitura e deixo aqui o link do livro [o programador pragmático](https://www.amazon.com.br/Programador-Pragm%C3%A1tico-Aprendiz-Mestre/dp/8577807002/ref=asc_df_8577807002/?tag=googleshopp00-20&linkCode=df0&hvadid=379765802639&hvpos=&hvnetw=g&hvrand=7291085860891527701&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1032132&hvtargid=pla-1412458569268&psc=1)
+Well, that's all! Thank you for reading, and here's the link to the book [The Pragmatic Programmer.](https://www.amazon.com.br/Programador-Pragm%C3%A1tico-Aprendiz-Mestre/dp/8577807002/ref=asc_df_8577807002/?tag=googleshopp00-20&linkCode=df0&hvadid=379765802639&hvpos=&hvnetw=g&hvrand=7291085860891527701&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1032132&hvtargid=pla-1412458569268&psc=1)
