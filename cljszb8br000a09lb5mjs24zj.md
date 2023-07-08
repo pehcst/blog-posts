@@ -1,90 +1,92 @@
 ---
-title: "Desvendando console.log"
+title: "Unraveling console.log"
 datePublished: Fri Jul 07 2023 19:37:53 GMT+0000 (Coordinated Universal Time)
 cuid: cljszb8br000a09lb5mjs24zj
-slug: desvendando-consolelog
+slug: unraveling-consolelog
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1688827407644/bf57cfe7-0a20-4a4c-9592-e42897f3f503.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1688827424671/29e0ea17-4e25-4e0a-85a4-5c00a15ca4a0.jpeg
 tags: tutorial, javascript, tips, frontend-development
 
 ---
 
-Utilizar o console.log() é uma maneira muito básica de diagnosticar e solucionar problemas menores em seu código.  
-  
-Mas, você sabia que há mais no console do que apenas o log? Neste post, trago para vocês mais duas funcionalidade para imprimir o console em JS.
+Using `console.log()` is a very basic way to diagnose and troubleshoot minor issues in your code.
+
+But did you know that there's more to the console than just a log? In this post, I bring you two additional functionalities to print to the console in JS.
 
 # **.log()**
 
-O método console.log() é o mais simples e mais conhecido onde gera uma mensagem para o console de seu navegador. A mensagem pode ser uma única string ou pode ser qualquer um ou mais objetos JavaScript.
+The `console.log()` method is the simplest and most well-known, which generates a message to your browser's console. The message can be a single string or one or more JavaScript objects.
 
 ```javascript
-const x = 'Teste'
+const x = 'Test'
 console.log(x)
 ```
 
-Neste exemplo temos como retorno 'Teste' no console, bem simples, né?
+In this example, '*Test*' will be returned in the console, pretty simple, right?
 
-Também conseguimos incluir múltiplos valores no console, adicione uma string ao inicio para identificar o que está registrando.
-
-```javascript
-const x = 'Teste'
-console.log("valor", x)
-```
-
-Mas e se tivermos diversos valores para mostrar?
+We can also include multiple values in the console. Add a string at the beginning to identify what you're logging.
 
 ```javascript
-const x = 'Teste'
-const y = 'Super teste'
-const z = 'Mega teste'
+const x = 'Test'
+console.log("value", x)
 ```
 
-Usaríamos console.log 3 vezes? não! podemos incluir todos em um só e ainda adicionamos uma string para identificar cada um deles.
+But what if we have multiple values to show?
 
 ```javascript
-const x = 'Teste'
-const y = 'Super teste'
-const z = 'Mega teste'
-console.log('x:' x, 'y:', y, 'z:', z)
+const x = 'Test'
+const y = 'Super test'
+const z = 'Mega test'
 ```
 
-Mas isso é muito trabalhoso, para facilitar é só envolver as variaveis dentro de uma chave que transformamos o log em objeto
+Would we use console.log 3 times? No! We can include all of them in one and still add a string to identify each of them.
 
 ```javascript
-const x = 'Teste'
-const y = 'Super teste'
-const z = 'Mega teste'
-console.log({x,y,z})
+const x = 'Test'
+const y = 'Super test'
+const z = 'Mega test'
+console.log('x:', x, 'y:', y, 'z:', z)
 ```
 
-# **Variações de logs**
-
-Existem outras variações para melhorar a visibilidade no console do navegador
+But that's a lot of work. To make it easier, simply wrap the variables inside curly braces to transform the log into an object.
 
 ```javascript
-console.log('Console log simples')
-console.info('Console de informações')
-console.debug('Console para debug')
-console.warn('Console de aviso')
-console.error('Console de error')
+const x = 'Test'
+const y = 'Super test'
+const z = 'Mega test'
+console.log({x, y, z})
 ```
 
-Cada um desses tem uma interação diferente com o navegador, facilitando na hora do seu debug, adicionando estilos nos logs, por exemplo o warn aparecerá de cor **amarela** e o error de cor **vermelha**.
+# Log Variations
 
-*Os estilos podem variar de acordo com o seu navegador*
+There are other variations to improve visibility in the browser console.
+
+```javascript
+console.log('Simple console log')
+console.info('Information console')
+console.debug('Debug console')
+console.warn('Warning console')
+console.error('Error console')
+```
+
+Each of these has a different interaction with the browser, making debugging easier. You can add styles to the logs, for example, where a warning will appear in <mark>yellow</mark> and an error in **red**.
+
+The styles may vary depending on your browser.
 
 # **.assert()**
 
-Também podemos adicionar condicionais no console do navegador, utilizando o assert() nós conseguimos imprimir o log de acordo com o booleano da informação.
+We can also add conditionals to the browser console. By using `assert()`, we can print the log according to the boolean value of the information.
 
 ```javascript
-const funciona = false
-console.assert(funciona, 'Este é o motivo') 
+const works = false
+console.assert(works, 'This is the reason')
 ```
 
-Se o primeiro argumento do assert for false, a mensagem irá imprimir no console, mas se retornar true não irá aparecer.
+If the first argument of assert is false, the message will be printed in the console. But if it returns true, it won't appear.
 
 # **.count()**
 
-Sim, é possível realizar um contador dentro do console.
+Yes, it's possible to create a counter within the console.
 
 ```javascript
 for (i = 0; i < 10; i++) {
@@ -92,13 +94,13 @@ for (i = 0; i < 10; i++) {
 }
 ```
 
-Cada interação com o loop irá imprimir um contador no console, nesse caso você verá default: 1 até default: 10, mas se executar o loop novamente ele irá continuar de onde parou, no caso 11 até 20.
+Each iteration of the loop will print a counter in the console. In this case, you will see the default: 1 up to default: 10. If you execute the loop again, it will continue from where it left off, starting from 11 up to 20.
 
-Para resetar o contador, podemos usar o **console.countReset()** após o loop.
+To reset the counter, you can use the `console.countReset()` after the loop.
 
 # **.Time()**
 
-Além de contar, também conseguimos cronometrar, para isso basta utilizarmos o console.time() mas ele sozinho não poderá fazer muita coisa, para exemplificar vamos criar um pequeno intervalo, que simularia uma renderização utilizando o setTimeout(). Dentro desse tempo limite, vamos utilizar o console.timeEnd() para pegar o tempo final de execução.
+In addition to counting, we can also time the execution using the `console.time()`. However, it alone can't do much. To demonstrate, let's create a small interval that simulates rendering using `setTimeout()`. Within this time limit, we'll use `console.timeEnd()` to get the final execution time.
 
 ```javascript
 console.time()
@@ -107,9 +109,9 @@ setTimeout(() => {
 }, 2000)
 ```
 
-Executando esse trecho de código, podemos ver que no console irá mostrar o tempo que demorou para realizar a setTimeout().
+By executing this code snippet, you can see that the console will display the time it took to execute the `setTimeout()`.
 
-Também podemos mostrar o tempo que está executando utilizando o timeLog para rotular um temporizador.
+We can also display the elapsed time using timeLog to label a timer.
 
 ```javascript
 console.time()
@@ -120,7 +122,7 @@ setTimeout(() => {
 
 # **.Table()**
 
-Quer ver seu log como uma tabela? é possível com o .table(), este é um dos usos para melhorar a visualização de alguns objetos.
+Want to see your log as a table? It's possible with `.table()`. This is one of the uses to improve the visualization of certain objects.
 
 ```javascript
 let devices = [
@@ -148,10 +150,12 @@ console.table(devices);
 
 # **.clear()**
 
-Está tendo dificuldades de achar um log por conta de diversas renderizações que você está fazendo na página? Fica atualizando muito e acaba se perdendo no console do navegador?
+Have trouble finding a log due to the multiple renders you're doing on the page? Are you constantly refreshing and getting lost in the browser console?
 
-Simples, adicione o console.clear() no inicio do seu código e sempre que renderizar você terá console novo.
+Simple, add `console.clear()` at the beginning of your code, and every time you render, you'll have a fresh console.
 
-Só não vá adicionar no final do seu código 🤪🤪🤪
+Just don't add it at the end of your code 🤪🤪🤪
 
-bem, isso é tudo! Obrigado pela leitura e claro existem diversos outros logs que pode utilizar, desbrave a documentação: [https://developer.mozilla.org/pt-BR/docs/Web/API/Console](https://developer.mozilla.org/pt-BR/docs/Web/API/Console)
+Well, that's all! Thank you for reading, and of course, there are many other logs you can use.
+
+Explore the documentation: [**https://developer.mozilla.org/enUS/docs/Web/API/Console**](https://developer.mozilla.org/en-US/docs/Web/API/Console)
