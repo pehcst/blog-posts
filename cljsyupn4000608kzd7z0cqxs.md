@@ -6,13 +6,13 @@ cuid: cljsyupn4000608kzd7z0cqxs
 slug: 3-apis-every-front-end-developer-should-study
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1688761408227/637d3600-fa0d-4630-b254-d00f9dbdd990.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1688761474239/e98764a1-0e52-4609-83bf-354f93aef679.jpeg
-tags: react-native, reactjs, frontend-development
+tags: frontend, react-native, reactjs, frontend-development
 
 ---
 
 Every developer needs to practice, right? A developer's life isn't just about books or Stack Overflow, so I've gathered some APIs that I've used to learn while having fun on front-end projects and also add to your portfolio 😍
 
-If you need inspiration for the project, I use the [dribble](https://dribbble.com/) to search for design references, but don't worry too much about searching, I'll leave some templates for each API!
+If you need inspiration for the project, I use the [dribble](https://dribbble.com/) to search for design references but don't worry too much about searching, I'll leave some templates for each API!
 
 ✋🏻 **Don't forget to credit the designer, ok.**
 
@@ -20,7 +20,7 @@ If you need inspiration for the project, I use the [dribble](https://dribbble.c
 
 ![Imagem de Seapul Nahwan - Dribbble](https://images.prismic.io/pehcst/697cb6a6-f7fa-4c7b-a9f0-b40ef042a3d8_pokeapi.png?auto=compress,format align="center")
 
-Have you ever thought about creating a Pokedex? knowing all existing Pokemons? Then it's time to explore this magnificent API that provides all the necessary information to create a huge pokedex and make Ash jealous.
+Have you ever thought about creating a Pokedex? knowing all existing Pokemon? Then it's time to explore this magnificent API that provides all the necessary information to create a huge pokedex and make Ash jealous.
 
 API 👉🏻 [https://pokeapi.co/](https://pokeapi.co/)
 
@@ -76,6 +76,6 @@ Outsmart Tony Stark and build a powerful application with this reference 👊�
 
 That's it, folks, with these 3 examples you will already acquire a lot of knowledge on how to work with an API and for sure it will help you in future projects!
 
-But don't limit yourself to just these APIs listed above, there are several public APIs for you to access and create your own applications and tune up your portfolio.
+But don't limit yourself to just these APIs listed above, there are several public APIs for you to access and create your applications and tune up your portfolio.
 
 Hope I helped! See you next time 👋🏻
