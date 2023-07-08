@@ -3,14 +3,15 @@ title: "Rubber duck debugging? what?"
 datePublished: Fri Jul 07 2023 19:49:02 GMT+0000 (Coordinated Universal Time)
 cuid: cljszpkcv000808kz88j84x7e
 slug: rubber-duck-debugging-what
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1688827947732/4efb37c6-99d1-433e-bd33-b8751bdc5a46.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1688827917995/684154a2-6de5-4c63-a8a6-9f0a15dc0d09.jpeg
-tags: programming-blogs, books, tips
+tags: programming-blogs, books, tips, programming-tips
 
 ---
 
-![um incrivel pato de borracha](https://images.prismic.io/pehcst/3c91444d-066b-47b5-88b8-efe93d48484f_duck.jpeg?auto=compress,format align="center")
-
 If you're a programmer, have you ever found yourself talking to yourself to understand what your code is doing or to identify where a certain error is occurring? This debugging method is quite well-known, and programmers often debug with a "***rubber duck.***" It may sound crazy, but it's a software engineering method. Debugging with a rubber duck refers to a story from the book "*The Pragmatic Programmer*" (which I highly recommend reading) where a programmer carries a rubber duck and debugs their code by explaining it, line by line, to the duck.
+
+![My duck](https://images.prismic.io/pehcst/3c91444d-066b-47b5-88b8-efe93d48484f_duck.jpeg?auto=compress,format align="center")
 
 I have done it, and I know that many programmers have had the experience of explaining a programming problem to someone else, possibly even to someone who knows nothing about this universe, and magically finding the solution during the explanation of the problem.
 
