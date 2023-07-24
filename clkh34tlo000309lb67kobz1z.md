@@ -93,9 +93,63 @@ ReactDOM.render(
 
 Try both versions:
 
-Version with useLayoutEffect — No visual flicker (link: [**https://codesandbox.io/s/uselayouteffect-no-flash-ylyyg**](https://codesandbox.io/s/uselayouteffect-no-flash-ylyyg))
+Version with useLayoutEffect
 
-Version with useEffect — Visual flicker (link: [**https://codesandbox.io/s/useeffect-flash-on-render-yluoi**](https://codesandbox.io/s/useeffect-flash-on-render-yluoi))
+```javascript
+import React, { useState, useLayoutEffect } from "react";
+import ReactDOM from "react-dom";
+import "./styles.css";
+
+const BlinkyRender = () => {
+  const [value, setValue] = useState(0);
+
+  useLayoutEffect(() => {
+    if (value === 0) {
+      setValue(10 + Math.random() * 200);
+    }
+  }, [value]);
+
+  console.log("render", value);
+
+  return (
+    <div onClick={() => setValue(0)}>value: {value}</div>
+  );
+};
+
+ReactDOM.render(
+  <BlinkyRender />,
+  document.querySelector("#root")
+);
+```
+
+Version with useEffect — Visual flicker
+
+```javascript
+import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+import "./styles.css";
+
+const BlinkyRender = () => {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (value === 0) {
+      setValue(10 + Math.random() * 200);
+    }
+  }, [value]);
+
+  console.log("render", value);
+
+  return (
+    <div onClick={() => setValue(0)}>value: {value}</div>
+  );
+};
+
+ReactDOM.render(
+  <BlinkyRender />,
+  document.querySelector("#root")
+);
+```
 
 Notice how the `useLayoutEffect` version visually updates only once, even though the component has been rendered twice. The `useEffect` version, on the other hand, visually renders twice, where you can briefly see the value as 0.
 
